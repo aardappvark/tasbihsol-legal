@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — TasbihSol</title>
+    <style>
+        body { background: #0A0A0E; color: #ccc; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.7; }
+        h1 { color: #9945FF; border-bottom: 2px solid #9945FF; padding-bottom: 10px; }
+        h2 { color: #14F195; margin-top: 32px; }
+        h3 { color: #9945FF; }
+        a { color: #9945FF; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+        th, td { border: 1px solid #333; padding: 8px 12px; text-align: left; }
+        th { background: #18182E; color: #9945FF; }
+        .highlight { background: #18182E; border-left: 3px solid #9945FF; padding: 12px 16px; margin: 16px 0; border-radius: 0 8px 8px 0; }
+        .warning { background: #2E1818; border-left: 3px solid #ff4444; padding: 12px 16px; margin: 16px 0; border-radius: 0 8px 8px 0; }
+        .green { background: #182E1E; border-left: 3px solid #14F195; padding: 12px 16px; margin: 16px 0; border-radius: 0 8px 8px 0; }
+        ul, ol { padding-left: 20px; }
+        li { margin: 4px 0; }
+        footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #333; color: #666; font-size: 14px; }
+    </style>
+</head>
+<body>
+    <p><a href="index.html">&larr; Back to TasbihSol</a></p>
+    <h1>Privacy Policy</h1>
+    <p><strong>Effective Date:</strong> 22 February 2026<br>
+    <strong>Last Updated:</strong> 22 February 2026<br>
+    <strong>Application:</strong> TasbihSol (com.tasbihsol.app)<br>
+    <strong>Developer:</strong> MidMightBit Games</p>
+
+    <h2>1. Introduction</h2>
+    <p>This Privacy Policy explains how TasbihSol ("the App", "we", "us", "our") handles information when you use our digital Islamic tasbih application. We are committed to protecting your privacy and being transparent about our data practices.</p>
+    <p>TasbihSol is a devotional tool designed to assist Muslims in performing dhikr (remembrance of Allah). The App is designed with a privacy-first architecture: we do not collect, store, process, or transmit any personal information whatsoever.</p>
+
+    <h2>2. Data Controller</h2>
+    <div class="highlight">
+        <strong>MidMightBit Games</strong><br>
+        Jurisdiction: Commonwealth of Australia<br>
+        Contact: <a href="mailto:aardappvark@proton.me">aardappvark@proton.me</a>
+    </div>
+
+    <h2>3. Data We Collect</h2>
+
+    <div class="green">
+        <strong>We collect NO personal data.</strong>
+    </div>
+
+    <p>TasbihSol does <strong>not</strong> collect, transmit, or process any of the following:</p>
+    <ul>
+        <li>Names, email addresses, phone numbers, or any personally identifiable information (PII)</li>
+        <li>User accounts or registration data</li>
+        <li>Analytics or usage telemetry</li>
+        <li>Advertising identifiers or tracking pixels</li>
+        <li>Device identifiers (IMEI, Android ID, etc.)</li>
+        <li>Precise or approximate geographic coordinates</li>
+        <li>Browsing history, search queries, or interaction logs</li>
+        <li>Contacts, calendar, photos, files, or any on-device content</li>
+        <li>Biometric data</li>
+        <li>Financial information, payment details, or transaction history</li>
+        <li>Health or fitness data</li>
+        <li>Cookies, web beacons, or similar tracking technologies</li>
+    </ul>
+
+    <p>We do <strong>not</strong> use any third-party analytics services, advertising SDKs, crash reporting tools, or data collection frameworks.</p>
+
+    <h2>4. Local Storage</h2>
+    <p>TasbihSol stores the following data <strong>exclusively on your device</strong> using Android's local storage mechanisms (SharedPreferences and encrypted storage). This data is never transmitted to any server:</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Data</th>
+                <th>Purpose</th>
+                <th>Storage Location</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dhikr preferences</td>
+                <td>Remember your preferred dhikr sets, count targets, and display settings</td>
+                <td>Device only</td>
+            </tr>
+            <tr>
+                <td>Tasbih statistics</td>
+                <td>Track your daily counts, streaks, and completion history</td>
+                <td>Device only</td>
+            </tr>
+            <tr>
+                <td>Favourites</td>
+                <td>Store your bookmarked du'as, adhkar, and Names of Allah</td>
+                <td>Device only</td>
+            </tr>
+            <tr>
+                <td>Notification preferences</td>
+                <td>Daily dhikr reminder times and enabled/disabled state</td>
+                <td>Device only</td>
+            </tr>
+            <tr>
+                <td>Wallet public address</td>
+                <td>Solana wallet address used for Sign In With Solana (SIWS) identity verification</td>
+                <td>Encrypted on device only</td>
+            </tr>
+            <tr>
+                <td>Region screening result</td>
+                <td>Boolean flag indicating whether the user's region is permitted</td>
+                <td>Device only</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>All locally stored data is deleted when you uninstall the App. You may also clear this data at any time through your device's application settings.</p>
+
+    <h2>5. Network Requests</h2>
+    <p>TasbihSol makes minimal network requests, limited to the following:</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Request</th>
+                <th>Destination</th>
+                <th>Purpose</th>
+                <th>Data Sent</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>SGT Verification</td>
+                <td>Solana RPC (mainnet-beta)</td>
+                <td>Verify Seeker Genesis Token ownership for dApp Store compliance</td>
+                <td>Wallet public address only</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>No user data, usage patterns, dhikr statistics, preferences, or any other information is transmitted to any server. The SGT verification query sends only the wallet's public address (which is already publicly visible on the Solana blockchain) to the Solana RPC endpoint.</p>
+
+    <h2>6. Permissions Explained</h2>
+    <p>TasbihSol requests the following Android permissions, each with a specific and limited purpose:</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Permission</th>
+                <th>Purpose</th>
+                <th>Data Impact</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>INTERNET</code></td>
+                <td>Required for Solana RPC communication to verify SGT ownership</td>
+                <td>Only wallet public address is sent; no personal data transmitted</td>
+            </tr>
+            <tr>
+                <td><code>ACCESS_COARSE_LOCATION</code></td>
+                <td>Region verification for sanctions compliance screening</td>
+                <td>Processed entirely on-device. No location data is transmitted, stored, or logged. Used only to determine MCC/region code.</td>
+            </tr>
+            <tr>
+                <td><code>RECEIVE_BOOT_COMPLETED</code></td>
+                <td>Reschedule daily dhikr reminder notifications after device restart</td>
+                <td>No data collected or transmitted</td>
+            </tr>
+            <tr>
+                <td><code>POST_NOTIFICATIONS</code></td>
+                <td>Display daily dhikr reminders at user-configured times</td>
+                <td>No data collected or transmitted</td>
+            </tr>
+            <tr>
+                <td><code>VIBRATE</code></td>
+                <td>Haptic feedback when counting tasbih beads</td>
+                <td>No data collected or transmitted</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>7. No Automated Decision-Making</h2>
+    <p>TasbihSol does not use artificial intelligence, machine learning, profiling, or any form of automated decision-making that produces legal or similarly significant effects on users.</p>
+    <p>The sanctions/region screening feature is a deterministic, rule-based check that compares device locale and network operator information against a static list of restricted jurisdictions. This check is performed entirely on-device and does not involve any external processing or profiling.</p>
+
+    <h2>8. Children's Privacy</h2>
+    <p>TasbihSol does not collect personal data from any user, regardless of age. The App does not contain any mechanism for data collection, account creation, or user identification. As such, no special provisions for children's data are necessary, though we note compliance with the following:</p>
+    <ul>
+        <li>Children's Online Privacy Protection Act (COPPA) — United States</li>
+        <li>Age Appropriate Design Code (AADC) — United Kingdom</li>
+        <li>General Data Protection Regulation, Article 8 — European Union</li>
+        <li>Privacy Act 1988, Australian Privacy Principle 5 — Australia</li>
+    </ul>
+
+    <h2>9. Your Rights</h2>
+    <p>Because TasbihSol does not collect any personal data, the typical data subject rights (access, rectification, deletion, portability, etc.) do not apply in practice. However, we acknowledge and respect the following regulatory frameworks and the rights they confer:</p>
+
+    <h3>9.1 European Union — GDPR</h3>
+    <p>Under the General Data Protection Regulation (EU) 2016/679, you have the right to access, rectify, erase, restrict processing, data portability, and object to processing of personal data. As we collect no personal data, these rights are satisfied by default.</p>
+
+    <h3>9.2 United Kingdom — UK GDPR</h3>
+    <p>Under the UK General Data Protection Regulation and Data Protection Act 2018, you have equivalent rights to those under the EU GDPR. These rights are satisfied by default as no personal data is collected.</p>
+
+    <h3>9.3 California, United States — CCPA/CPRA</h3>
+    <p>Under the California Consumer Privacy Act (as amended by the California Privacy Rights Act), California residents have the right to know, delete, and opt out of the sale or sharing of personal information. TasbihSol does not sell, share, or collect personal information as defined under the CCPA/CPRA.</p>
+
+    <h3>9.4 Australia — Privacy Act 1988</h3>
+    <p>Under the Australian Privacy Act 1988 and Australian Privacy Principles (APPs), individuals have the right to access and correct personal information held by an organisation. As we collect no personal information, these rights are satisfied by default.</p>
+
+    <h3>9.5 Brazil — LGPD</h3>
+    <p>Under the Lei Geral de Protecao de Dados (LGPD), Brazilian residents have rights including confirmation of processing, access, correction, anonymisation, portability, deletion, and information about sharing. As we collect no personal data, these rights are satisfied by default.</p>
+
+    <h3>9.6 Japan — APPI</h3>
+    <p>Under the Act on the Protection of Personal Information (APPI), Japanese residents have the right to request disclosure, correction, and cessation of use of personal information. As we collect no personal information, these rights are satisfied by default.</p>
+
+    <h3>9.7 South Korea — PIPA</h3>
+    <p>Under the Personal Information Protection Act (PIPA), South Korean residents have the right to access, correct, suspend processing, and delete personal information. As we collect no personal information, these rights are satisfied by default.</p>
+
+    <h3>9.8 Singapore/Thailand — PDPA</h3>
+    <p>Under the respective Personal Data Protection Acts of Singapore and Thailand, residents have the right to access, correct, and withdraw consent for processing of personal data. As we collect no personal data, these rights are satisfied by default.</p>
+
+    <h2>10. Data Retention</h2>
+    <p>All data generated by TasbihSol is stored exclusively on your device. We do not retain any data on servers, cloud storage, or any off-device location.</p>
+    <ul>
+        <li><strong>Uninstallation:</strong> All App data is automatically deleted when you uninstall TasbihSol.</li>
+        <li><strong>Manual Clearing:</strong> You can clear all App data at any time via Android Settings &gt; Apps &gt; TasbihSol &gt; Storage &gt; Clear Data.</li>
+        <li><strong>No Backups:</strong> TasbihSol does not back up data to any cloud service.</li>
+    </ul>
+
+    <h2>11. Do Not Track</h2>
+    <p>TasbihSol respects the Do Not Track (DNT) browser/device signal. However, as the App does not track users in any capacity, the DNT signal has no practical effect — tracking is never performed regardless of the signal's state.</p>
+
+    <h2>12. Local Storage Disclosure (ePrivacy Directive)</h2>
+    <p>In compliance with the ePrivacy Directive (2002/58/EC as amended by 2009/136/EC), we disclose that TasbihSol stores data locally on your device using Android SharedPreferences and EncryptedSharedPreferences. This local storage is strictly necessary for the functioning of the App (storing your dhikr preferences, statistics, and notification settings) and does not involve any tracking or profiling. No cookies or web-based storage mechanisms are used.</p>
+
+    <h2>13. Changes to This Privacy Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated "Last Updated" date. Material changes will be communicated through the App where practicable. Your continued use of the App after any changes constitutes acceptance of the updated Privacy Policy.</p>
+
+    <h2>14. Governing Law</h2>
+    <p>This Privacy Policy is governed by and construed in accordance with the laws of the Commonwealth of Australia, with the courts of New South Wales, Australia having exclusive jurisdiction over any disputes arising under this policy.</p>
+
+    <h2>15. Contact Us</h2>
+    <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:</p>
+    <div class="highlight">
+        <strong>MidMightBit Games</strong><br>
+        Email: <a href="mailto:aardappvark@proton.me">aardappvark@proton.me</a><br>
+        Subject Line: TasbihSol Privacy Inquiry
+    </div>
+
+    <footer>
+        <p>&copy; 2026 MidMightBit Games. All rights reserved.</p>
+        <p><a href="index.html">TasbihSol Home</a></p>
+    </footer>
+</body>
+</html>
