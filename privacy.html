@@ -51,7 +51,7 @@
     <ul>
         <li>Names, email addresses, phone numbers, or any personally identifiable information (PII)</li>
         <li>User accounts or registration data</li>
-        <li>Analytics or usage telemetry</li>
+        <li>Personally-identifiable analytics or usage telemetry &mdash; the App sends only anonymous, aggregate event counts that cannot be tied to you or your device (see section 5A)</li>
         <li>Advertising identifiers or tracking pixels</li>
         <li>Device identifiers (IMEI, Android ID, etc.)</li>
         <li>Precise or approximate geographic coordinates</li>
@@ -63,7 +63,7 @@
         <li>Cookies, web beacons, or similar tracking technologies</li>
     </ul>
 
-    <p>We do <strong>not</strong> use any third-party analytics services, advertising SDKs, crash reporting tools, or data collection frameworks.</p>
+    <p>We do <strong>not</strong> use any third-party analytics services, advertising SDKs, crash reporting tools, or data collection frameworks. The only analytics are first-party and anonymous, described in full in section 5A.</p>
 
     <h2>4. Local Storage</h2>
     <p>TasbihSol stores the following data <strong>exclusively on your device</strong> using Android's local storage mechanisms (SharedPreferences and encrypted storage). This data is never transmitted to any server:</p>
@@ -131,10 +131,33 @@
                 <td>Verify Seeker Genesis Token ownership for dApp Store compliance</td>
                 <td>Wallet public address only</td>
             </tr>
+            <tr>
+                <td>Anonymous usage event</td>
+                <td><code>tasbihsol-analytics.aardappvark.workers.dev</code></td>
+                <td>Aggregate usage counts, so we know which features are used</td>
+                <td>A single event name (for example <code>app_open</code>) and nothing else</td>
+            </tr>
         </tbody>
     </table>
 
-    <p>No user data, usage patterns, dhikr statistics, preferences, or any other information is transmitted to any server. The SGT verification query sends only the wallet's public address (which is already publicly visible on the Solana blockchain) to the Solana RPC endpoint.</p>
+    <p>No dhikr statistics, preferences, wallet address or any other personal information is transmitted to any server. The SGT verification query sends only the wallet's public address (which is already publicly visible on the Solana blockchain) to the Solana RPC endpoint.</p>
+
+    <h2>5A. Anonymous Usage Analytics</h2>
+    <p>TasbihSol reports anonymous, aggregate usage counts to an endpoint we operate at
+    <code>tasbihsol-analytics.aardappvark.workers.dev</code>. This is a first-party service &mdash;
+    no third party is involved, and no analytics SDK is embedded in the App.</p>
+    <p>Each report is a single event name, for example <code>app_open</code> or
+    <code>tasbih_completed</code>. That is the entire payload. In particular it contains
+    <strong>no</strong> wallet address, no device identifier, no dhikr content or counts, no
+    advertising identifier, and nothing that could identify you or your device. The events cannot be
+    linked to one another, so they cannot be assembled into a profile or a session.</p>
+    <p>An approximate country is derived at the network edge from the request itself; the raw IP
+    address is never logged or stored. We use these counts only to see which features are used and
+    roughly where the App is active.</p>
+    <p><strong>There is currently no in-app switch to disable these anonymous events.</strong> If you
+    would prefer the App made no analytics request at all, blocking that hostname at the network
+    level prevents it; the App treats a failed analytics request as a no-op and continues to work
+    normally, and no feature depends on it.</p>
 
     <h2>6. Permissions Explained</h2>
     <p>TasbihSol requests the following Android permissions, each with a specific and limited purpose:</p>
